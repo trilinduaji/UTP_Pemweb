@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio | Tri Lindu Aji</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-black text-white font-[Roboto]">
+
+    <!-- NAVBAR -->
+    <nav class="fixed flex justify-between items-center gep-8 px-12 py-5 bg-gray-800 w-full z-10">
+        <h2 class="text-red-600 font-bold text-xl">T L AJI</h2>
+        <ul class="flex gap-8">
+            <li><a href="index.html" class="hover:text-red-600">Home</a></li>
+            <li><a href="about.html" class="hover:text-red-600">About me</a></li>
+            <li><a href="portofolio.html" class="hover:text-red-600">Portofolio</a></li>
+            <li><a href="project.html" class="hover:text-red-600">Project</a></li>
+            <li><a href="contact.html" class="hover:text-red-600">Contact</a></li>
+        </ul>
+    </nav>
+
+        <!-- Contact Section -->
+        <div class="py-36 px-12">
+                <div class="bg-black border border-red-600 rounded-2xl p-9">
+                    <div id="formContent">
+                        <h2 class="text-2xl font-black text-yellow-400 mb-2">Kirim Pesan 👋</h2>
+                        <p class="text-gray-400 text-sm mb-8 leading-relaxed">Isi form di bawah ini dan saya akan segera merespons pesan Anda dalam 1x24 jam.</p>
+
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Nama *</label>
+                                <input type="text" id="fname" placeholder="Nama Anda" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-800 outline-none focus:border-green-700 focus:bg-white transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Email *</label>
+                                <input type="email" id="femail" placeholder="email@example.com" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-800 outline-none focus:border-green-700 focus:bg-white transition">
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Subjek</label>
+                            <input type="text" id="fsubject" placeholder="Perihal pesan Anda" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-800 outline-none focus:border-green-700 focus:bg-white transition">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Pesan *</label>
+                            <textarea id="fmessage" placeholder="Tulis pesan Anda di sini..." rows="5" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-800 outline-none focus:border-green-700 focus:bg-white transition resize-none"></textarea>
+                        </div>
+                        <button onclick="handleSubmit()" class="w-full bg-yellow-600 text-white font-semibold text-sm py-3.5 rounded-full hover:bg-yellow-800 transition">
+                            Kirim Pesan →
+                        </button>
+                    </div>
+
+
+                    <div id="formSuccess" class="hidden text-center py-16">
+                        <div class="w-16 h-16 bg-green-100 border border-green-200 rounded-full flex items-center justify-center text-3xl mx-auto mb-5">✓</div>
+                        <h3 class="text-xl font-black text-gray-900 mb-2">Pesan Terkirim!</h3>
+                        <p class="text-gray-400 text-sm">Terima kasih telah menghubungi saya. Saya akan segera membalas pesan Anda.</p>
+                    </div>
+                </div>
+            </div>
+
+     <!-- Footer Section -->
+    <footer class="bg-gray-800 text-gray-400 body-font">
+        <div class="container px-5 py-8 mx-auto flex flex-col md:flex-row items-center justify-between">
+        <div class="flex items-center mb-4 md:mb-0">
+            <span class="ml-3 text-2xl font-bold text-white">T L AJI</span>
+        </div>
+        <p class="text-sm text-gray-400 text-center md:text-left">© 2026 Tri Lindu Aji — All rights reserved</p>
+            <div class="flex space-x-5 mt-4 md:mt-0">
+                <a href="https://github.com/trilinduaji" target="_blank" class="text-gray-400 hover:text-yellow-400 transition duration-300 text-xl py-2 px-2">
+                <i class="fab fa-"></i>
+                <img src="github.png" class="w-5">
+                </a>
+                <a href="https://www.instagram.com/trilinduaji/" target="_blank" class="text-gray-400 hover:text-yellow-400 transition duration-300 text-xl py-2 px-2">
+                <img src="ig.png" class="w-5">
+                <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/6282175572833" target="_blank" class="text-gray-400 hover:text-yellow-400 transition duration-500 text-xl py-2 px-2">
+                <img src="wa.png" class="w-5">
+                <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
